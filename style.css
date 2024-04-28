@@ -1,0 +1,130 @@
+/* -Google Font- */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+/* -Themes/Defaults- */
+:root[data-theme="light"] {
+    --pageBackgColor: #F7F8F9;
+    --pageBackBackgColor: #DCDFE4;
+
+    --navBackgColor: #2C3E5D;
+
+    --textColor: #ffffff;
+
+    --menuBackgColor: #44546F;
+}
+:root[data-theme="dark"] {
+    --pageBackgColor: #333333;
+    --pageBackBackgColor: #3f3f3f;
+
+    --navBackgColor: #222222;
+
+    --textColor: #fff;
+
+    --menuBackgColor: #444444;
+}
+
+body, html {
+    background-color: var(--pageBackgColor);
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+	font-weight: 800;
+    background: linear-gradient(
+    to right,
+    var(--pageBackBackgColor) 0,
+    var(--pageBackBackgColor) 5%,
+    var(--pageBackgColor) 5%,
+    var(--pageBackgColor) 95%,
+    var(--pageBackBackgColor) 95%,
+    var(--pageBackBackgColor) 100%
+  );
+}
+
+/* -Top/Nav Bar- */
+header {
+    width: 100%;
+	margin: 0 auto;
+    background: var(--navBackgColor);
+    text-align: center;
+    align-content: center;
+}
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+header h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--textColor);
+    font-size: 4em;
+    font-family: "Courgette", cursive;
+    font-weight: 600;
+    width: 80%;
+}
+header img {
+    float: left;
+}
+
+/* -Theme Switcher- */
+#theme-switcher {
+    background-color: var(--textColor);
+    width: 5em;
+    height: 5em;
+    margin: 0;
+    margin-top: -5em;
+    float: right;
+}
+
+/* -Calculator Stuff- */
+.main-box {
+    display: block;
+    width: 30%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--menuBackgColor);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.main-box h1 {
+    background-color: var(--navBackgColor);
+    color: var(--textColor);
+    font-size: 3em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.main-box .grade-dropdowns {
+    margin-bottom: 1em;
+}
+.main-box .grade-selects {
+    color: var(--textColor);
+}
+
+/* -Bottom Nav- */
+#bottom-nav {
+    width: 100%;
+	margin: 0 auto;
+    background: var(--navBackgColor);
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+}
+#bottom-nav::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+#bottom-nav h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--textColor);
+    font-size: 2em;
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    width: 80%;
+}
