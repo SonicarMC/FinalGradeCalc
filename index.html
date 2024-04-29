@@ -11,14 +11,13 @@
   </head>
   <body>
     <header>
-      <img src="assets/logo.png" alt="logo"/>
       <nav><h1>Final Grade Calculator</h1></nav>
-      <div id="theme-switcher"> </div>
+        <img id="theme-switcher" src="assets/sun-icon.png" alt="Theme changer">
     </header>
 
     <div class="main-box">
+      <h1>Enter Your Grades:</h1>
       <div class="grade-selects">
-        <h1>Enter Your Grades:</h1>
         <label for="grade-1-select">Enter 1st Quarter:</label>
         <select name="grade-1-select" class="grade-dropdowns" id="first-quarter">
           <option value="0.8">A</option>
@@ -30,7 +29,7 @@
 
       <div class="grade-selects">
         <label for="grade-2-select">Enter 2nd Quarter:</label>
-        <select name="grade-2-select" class="grade-dropdowns" id="first-quarter">
+        <select name="grade-2-select" class="grade-dropdowns" id="second-quarter">
           <option value="0.8">A</option>
           <option value="0.6">B</option>
           <option value="0.4">C</option>
@@ -40,7 +39,7 @@
 
       <div class="grade-selects">
         <label for="grade-3-select">Enter 3rd Quarter:</label>
-        <select name="grade-3-select" class="grade-dropdowns" id="first-quarter">
+        <select name="grade-3-select" class="grade-dropdowns" id="third-quarter">
           <option value="0.8">A</option>
           <option value="0.6">B</option>
           <option value="0.4">C</option>
@@ -50,7 +49,7 @@
 
       <div class="grade-selects">
         <label for="grade-4-select">Enter 4th Quarter:</label>
-        <select name="grade-4-select" class="grade-dropdowns" id="first-quarter">
+        <select name="grade-4-select" class="grade-dropdowns" id="fourth-quarter">
           <option value="0.8">A</option>
           <option value="0.6">B</option>
           <option value="0.4">C</option>
@@ -60,7 +59,7 @@
 
       <div class="grade-selects">
         <label for="grade-5-select">Enter Final Exam:</label>
-        <select name="grade-5-select"class="grade-dropdowns" id="first-quarter">
+        <select name="grade-5-select"class="grade-dropdowns" id="final-exam">
           <option value="0.8">A</option>
           <option value="0.6">B</option>
           <option value="0.4">C</option>
@@ -69,11 +68,15 @@
       </div>
 
       <button id="calculate-initiate-button" type="button">Calculate</button>
+
+      <div id="output-container">
+        <h2 id="grade-output">Final Grade: ___</h2>
+      </div>
     </div>
 
 
     <div id="bottom-nav">
-      <h1>Credit: Tyler Robucci | Commissioned By: Marion</h1>
+      <h1>Credit: Tyler Robucci | Commissioned By Marion</h1>
     </div>
 
     <script src="script.js"></script>
