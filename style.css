@@ -104,9 +104,14 @@ header h1 {
 }
 #calculate-initiate-button {
     background-color: var(--textColor);
-    width: 75%;
+    width: 50%;
     margin: 0;
     font-size: 2em;
+}
+#calculate-initiate-button:hover {
+    background-color: var(--pageBackBackgColor);
+    margin: 0;
+    font-size: 2.2em;
 }
 #output-container {
     background-color: var(--navBackgColor);

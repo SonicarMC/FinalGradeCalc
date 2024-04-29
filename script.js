@@ -38,5 +38,7 @@ document.getElementById("calculate-initiate-button").addEventListener("click", (
         letterScore="E";
     }
 
-    document.getElementById("grade-output").textContent = "Final Grade:"+letterScore;
+    document.getElementById("grade-output").textContent = "Final Grade: "+letterScore;
+
+    let audio = new Audio("assets/click-sound.wav").play();
 });
